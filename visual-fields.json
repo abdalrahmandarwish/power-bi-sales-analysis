@@ -1,0 +1,125 @@
+[
+  {
+    "type": "cardVisual",
+    "fields": {
+      "Data": [
+        "Fact Sales.# Orders"
+      ]
+    }
+  },
+  {
+    "type": "cardVisual",
+    "fields": {
+      "Data": [
+        "Fact Sales.total due"
+      ]
+    }
+  },
+  {
+    "type": "cardVisual",
+    "fields": {
+      "Data": [
+        "Fact Sales.line total"
+      ]
+    }
+  },
+  {
+    "type": "cardVisual",
+    "fields": {
+      "Data": [
+        "Fact Sales.total Freight"
+      ]
+    }
+  },
+  {
+    "type": "cardVisual",
+    "fields": {
+      "Data": [
+        "Fact Sales.total tax"
+      ]
+    }
+  },
+  {
+    "type": "areaChart",
+    "fields": {
+      "Category": [
+        "Dim Date.Date Hierarchy.Year",
+        "Dim Date.Date Hierarchy.Month",
+        "Dim Date.Date Hierarchy.Day"
+      ],
+      "Y": [
+        "Fact Sales.# Orders"
+      ]
+    }
+  },
+  {
+    "type": "pieChart",
+    "fields": {
+      "Category": [
+        "Dim ShipMethod.ShipMethod"
+      ],
+      "Y": [
+        "Fact Sales.# Orders"
+      ]
+    }
+  },
+  {
+    "type": "treemap",
+    "fields": {
+      "Values": [
+        "Fact Sales.# Orders"
+      ],
+      "Group": [
+        "Dim product.Product Hierarchy.Product",
+        "Dim product.Product Hierarchy.ProductCategory",
+        "Dim product.Product Hierarchy.ProductSubCategory"
+      ]
+    }
+  },
+  {
+    "type": "barChart",
+    "fields": {
+      "Y": [
+        "Fact Sales.# Orders"
+      ],
+      "Category": [
+        "Dim Status.Status"
+      ]
+    }
+  },
+  {
+    "type": "clusteredColumnChart",
+    "fields": {
+      "Category": [
+        "DimTerritory.Territory"
+      ],
+      "Y": [
+        "Fact Sales.# Orders"
+      ]
+    }
+  },
+  {
+    "type": "tableEx",
+    "fields": {
+      "Values": [
+        "DimTerritory.Territory"
+      ]
+    }
+  },
+  {
+    "type": "tableEx",
+    "fields": {
+      "Values": [
+        "Dim Status.Status"
+      ]
+    }
+  },
+  {
+    "type": "tableEx",
+    "fields": {
+      "Values": [
+        "Dim Date.Year"
+      ]
+    }
+  }
+]
